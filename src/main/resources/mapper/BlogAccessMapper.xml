@@ -9,7 +9,7 @@
         SELECT
         count(1)
         FROM blog_access
-        WHERE link like concat(#{linkPrefix}, '%')
+        WHERE link like concat('', '#{linkPrefix}', '%')
     </select>
     <select id="countByLink" resultType="java.lang.Long">
         SELECT
